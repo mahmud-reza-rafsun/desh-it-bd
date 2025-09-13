@@ -46,7 +46,7 @@ git clone https://github.com/mahmud-reza-rafsun/desh-it-bd.git
 cd desh-it
 ```
 
-## Frontend Setup (Client)
+## Setup
 ```bash
 cd desh_it_client
 npm install      # Install frontend dependencies
