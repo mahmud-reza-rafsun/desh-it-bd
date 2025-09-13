@@ -53,7 +53,6 @@ npm install      # Install frontend dependencies
 npm run dev      # Start the React development server
 
 ## Backend Setup (Server)
-```bash
 cd desh_it_server
 npm install        # Install backend dependencies
 nodemon index.js   # Start the backend server
