@@ -48,6 +48,7 @@ cd desh-it
 
 ## Setup
 ```bash
+## Fontend Setup (Client)
 cd desh_it_client
 npm install      # Install frontend dependencies
 npm run dev      # Start the React development server
