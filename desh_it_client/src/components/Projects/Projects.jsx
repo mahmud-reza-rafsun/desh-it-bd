@@ -24,7 +24,7 @@ const Projects = () => {
     });
 
     return (
-        <div className="container mx-auto mt-20">
+        <div className="container mx-auto mt-20 px-4 lg:px-0">
             <motion.div
                 ref={titleRef}
                 initial={{ y: 25, opacity: 0 }}
@@ -32,7 +32,7 @@ const Projects = () => {
                 transition={{ duration: 1, ease: "easeInOut" }}
                 className="text-center mb-10"
             >
-                <h2 className="text-3xl lg:text-4xl font-semibold">
+                <h2 className="text-2xl lg:text-4xl font-semibold">
                     Our <span className="text-[#FA8370]">Developed</span> Project
                 </h2>
             </motion.div>
@@ -63,7 +63,7 @@ const Projects = () => {
             </motion.div>
             <Link to="/projects">
                 <div className="text-center mt-16 mb-10">
-                    <button className="btn bg-[#FA8370] border-none text-white px-12 rounded-3xl shadow-2xl">
+                    <button className="btn bg-[#FA8370] border-none text-white px-16 py-3 rounded-3xl shadow-2xl">
                         More
                     </button>
                 </div>

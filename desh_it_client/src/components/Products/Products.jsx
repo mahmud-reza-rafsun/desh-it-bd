@@ -24,7 +24,7 @@ const Products = () => {
     });
 
     return (
-        <div className="container mx-auto mt-20">
+        <div className="container mx-auto px-4 lg:px-0 mt-20">
             <motion.div
                 ref={titleRef}
                 initial={{ y: 25, opacity: 0 }}
@@ -32,7 +32,7 @@ const Products = () => {
                 transition={{ duration: 1, ease: "easeInOut" }}
                 className="text-center mb-10"
             >
-                <h2 className="text-3xl lg:text-4xl font-semibold">
+                <h2 className="text-2xl lg:text-4xl font-semibold">
                     <span className="text-[#FA8370]">Our</span> Products
                 </h2>
             </motion.div>
@@ -64,7 +64,7 @@ const Products = () => {
             </motion.div>
             <Link to="/products">
                 <div className="text-center mt-16">
-                    <button className="btn bg-[#FA8370] border-none text-white px-12 rounded-3xl shadow-2xl">
+                    <button className="btn bg-[#FA8370] border-none text-white px-16 rounded-3xl shadow-2xl">
                         More
                     </button>
                 </div>

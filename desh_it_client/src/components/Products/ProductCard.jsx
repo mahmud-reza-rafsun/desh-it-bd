@@ -1,31 +1,47 @@
 /* eslint-disable no-unused-vars */
-import { motion } from "motion/react"
+import { motion } from "framer-motion";
 
 const ProductCard = ({ product }) => {
-    return (
-        <motion.div initial={{ y: 25, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 1, ease: 'easeIn' }}>
-            <div
-                className="p-4 rounded-md relative 
-             transform transition-transform duration-300 
-             hover:-translate-y-2"
-            >
-                <figure>
-                    <img
-                        className="w-full h-48 sm:h-56 md:h-64 lg:h-72 xl:h-80 object-cover rounded-md"
-                        src={product?.image}
-                        alt={product?.title || "Product Image"}
-                    />
-                </figure>
+  return (
+    <motion.div
+      initial={{ y: 25, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.8, ease: "easeInOut" }}
+      className="w-full max-w-xs sm:max-w-sm md:max-w-md mx-auto"
+    >
+      <div
+        className="rounded-xl relative overflow-hidden group
+        transform transition-transform duration-300 
+        hover:-translate-y-3 shadow-md"
+      >
+        {/* Image */}
+        <figure>
+          <img
+            className="w-full h-48 sm:h-56 md:h-64 object-cover rounded-t-xl 
+            transition-transform duration-300 group-hover:scale-105"
+            src={product?.image}
+            alt={product?.title || 'Product Image'}
+          />
+        </figure>
 
-                <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 sm:-translate-y-1/4 lg:-translate-y-1/3 bg-white p-4 sm:p-5 lg:p-6 rounded-xl shadow w-11/12 sm:w-3/4 md:w-2/3 lg:w-[400px] text-center z-20">
-                    <h2 className="text-base sm:text-lg md:text-xl lg:text-xl font-semibold text-gray-950">
-                        {product?.title}
-                    </h2>
-                </div>
-            </div>
-
-        </motion.div>
-    );
+        {/* Bottom Title Box */}
+        <div
+          className="bg-white px-4 py-3 sm:px-6 sm:py-4 
+          rounded-b-xl shadow-md text-center"
+        >
+          <h2
+            className="text-base sm:text-lg text-blue-400 md:text-xl font-semibold
+            relative inline-block after:content-[''] after:block after:w-0 
+            after:h-[2px] after:bg-blue-400 
+            after:transition-all after:duration-500 
+            group-hover:after:w-full"
+          >
+            {product?.title}
+          </h2>
+        </div>
+      </div>
+    </motion.div>
+  );
 };
 
 export default ProductCard;

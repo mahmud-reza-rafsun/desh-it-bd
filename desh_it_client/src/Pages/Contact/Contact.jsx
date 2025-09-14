@@ -23,16 +23,18 @@ const Contact = () => {
     };
 
     return (
-        <div className="container mx-auto my-10">
+        <div className="container mx-auto my-5">
             {/* Title animation */}
-            <motion.h2
-                initial={{ scale: 0.8, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
-                className="text-center font-semibold text-3xl lg:text-4xl pb-6"
-            >
-                Contact <span className="text-[#FA8370]">Us</span>
-            </motion.h2>
+            <div className="text-center mt-32 pb-16">
+                <motion.h2
+                    initial={{ y: -50, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 1, ease: "easeOut" }}
+                    className="text-3xl lg:text-4xl font-semibold"
+                >
+                    Our <span className="text-[#FA8370]">Contact</span> Us
+                </motion.h2>
+            </div>
 
             <div className="flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-15">
                 {/* Form animation */}

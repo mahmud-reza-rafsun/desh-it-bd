@@ -14,8 +14,8 @@ const Products = () => {
     });
 
     return (
-        <div className="container mx-auto my-10 pb-12">
-            <div className="text-center mb-10">
+        <div className="container mx-auto mt-32 pb-16">
+            <div className="text-center mb-15">
                 <motion.h2
                     initial={{ y: -50, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
@@ -26,7 +26,7 @@ const Products = () => {
                 </motion.h2>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-5 lg:gap-y-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-5 lg:gap-y-16">
                 {products.map((product) => (
                     <ProductCard key={product?._id} product={product} />
                 ))}

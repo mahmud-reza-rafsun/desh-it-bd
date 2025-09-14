@@ -59,7 +59,7 @@ const Testimonial = () => {
                     <motion.div variants={cardVariant} className='bg-white shadow-lg p-5 w-full lg:w-1/3 text-center space-y-5 rounded-md'>
                         <img className='mx-auto' src={frame1} alt="" />
                         <span className='text-[28px] font-medium'>
-                            <CountUp start={0} end={7} duration={3}></CountUp> +
+                            <CountUp start={0} end={7} duration={10}></CountUp> +
                         </span>
                         <p className='text-sm font-light text-gray-400'>Years Experience in App Development</p>
                     </motion.div>
@@ -68,7 +68,7 @@ const Testimonial = () => {
                     <motion.div variants={cardVariant} className='bg-white shadow-lg p-5 w-full lg:w-1/3 text-center space-y-5 rounded-md'>
                         <img className='mx-auto' src={group} alt="" />
                         <span className='text-[28px] font-medium'>
-                            <CountUp start={0} end={30} duration={7}></CountUp> +
+                            <CountUp start={0} end={30} duration={10}></CountUp> +
                         </span>
                         <p className='text-sm font-light text-gray-400'>Mobile Apps Developed</p>
                     </motion.div>
@@ -77,7 +77,7 @@ const Testimonial = () => {
                     <motion.div variants={cardVariant} className='bg-white shadow-lg p-5 w-full lg:w-1/3 text-center space-y-5 rounded-md'>
                         <img className='mx-auto' src={tranding} alt="" />
                         <span className='text-[28px] font-medium'>
-                            <CountUp start={0} end={25} duration={5}></CountUp> +
+                            <CountUp start={0} end={25} duration={10}></CountUp> +
                         </span>
                         <p className='text-sm font-light text-gray-400'>Websites Developed</p>
                     </motion.div>

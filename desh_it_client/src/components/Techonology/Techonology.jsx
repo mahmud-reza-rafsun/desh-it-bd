@@ -16,9 +16,9 @@ const Techonology = () => {
     ];
 
     return (
-        <div className="px-6 lg:px-16 py-12">
+        <div className="px-6 lg:px-16 py-16">
             <div className="text-center mb-10 max-w-xl mx-auto">
-                <h2 className="text-2xl font-semibold">
+                <h2 className="text-2xl lg:text-4xl font-semibold">
                     <span className="text-[#FA8370]">Technology</span> We Use
                 </h2>
             </div>

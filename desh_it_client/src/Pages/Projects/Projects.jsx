@@ -14,8 +14,8 @@ const Projects = () => {
     });
 
     return (
-        <div className="container mx-auto my-10 pb-12">
-            <div className="text-center mb-10">
+        <div className="container mx-auto mt-32 pb-16">
+            <div className="text-center mb-15">
                 <motion.h2
                     initial={{ y: -50, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}

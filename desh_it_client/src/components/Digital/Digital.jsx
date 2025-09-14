@@ -74,7 +74,7 @@ export default function DigitalMarketingCircle() {
         <div className="bg-gray-50 py-20">
             {/* Typing Title */}
             <div ref={titleRef} className="text-center mb-10 max-w-4xl mx-auto">
-                <h2 className="text-3xl lg:text-4xl font-semibold">
+                <h2 className="text-2xl lg:text-4xl font-semibold">
                     <span className="text-[#FA8370]">{displayedTitle.split(" ")[0]}</span>{" "}
                     {displayedTitle.split(" ").slice(1).join(" ")}
                 </h2>
@@ -82,7 +82,7 @@ export default function DigitalMarketingCircle() {
                     initial={{ y: 25, opacity: 0 }}
                     animate={titleInView ? { y: 0, opacity: 1 } : {}}
                     transition={{ duration: 1, ease: 'easeInOut' }}
-                    className="font-light text-gray-500 mt-4"
+                    className="font-light text-gray-500 text-sm lg:text-base mt-4"
                 >
                     We deliver innovative digital solutions including Mobile App Development, UI/UX Design, and Web Development.
                 </motion.p>
@@ -140,8 +140,8 @@ export default function DigitalMarketingCircle() {
 
                     {/* Center Text with Typing */}
                     <div ref={centerRef} className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
-                        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 text-center">
-                            <span className="text-[#FA8370]">{centerDisplayed.split(" ")[0]}</span>{" "}
+                        <h2 className="text-xl sm:text-2xl md:text-4xl font-bold text-gray-800 text-center">
+                            <span className="">{centerDisplayed.split(" ")[0]}</span>{" "}
                             {centerDisplayed.split(" ").slice(1).join(" ")}
                         </h2>
                     </div>

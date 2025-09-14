@@ -28,10 +28,10 @@ const OurServices = () => {
                 transition={{ duration: 1, ease: "easeInOut" }}
                 className="text-center mb-10 max-w-4xl mx-auto"
             >
-                <h2 className="text-3xl lg:text-4xl font-semibold">
+                <h2 className="text-2xl lg:text-4xl font-semibold">
                     <span className="text-[#FA8370]">Our</span> Service
                 </h2>
-                <p className="font-light text-gray-500 mt-4">
+                <p className="font-light text-sm lg:text-base text-gray-500 mt-4">
                     We deliver innovative digital solutions including Mobile App Development, UI/UX Design, and Web Development. Our focus is on creating seamless
                 </p>
             </motion.div>
